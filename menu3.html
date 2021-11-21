@@ -5,15 +5,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OhMyFood - Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>OhMyFood - Menu À la française</title>
 </head>
 
 <body>
     <header>
-        <a href="#">
-            <img class="logo_desktop" src="images/ohmyfood.png" alt="image du logo de l'entreprise">
-        </a>
+        <div class="container_header">
+            <a href="index.html"> <i class="header_arrow_left fa-solid fa-arrow-left"></i></a>
+            <a href="index.html"><img class="header_logo" src="images/logo/ohmyfood.png" alt="Image du logo de l'entreprise"></a>
+        </div>
     </header>
+    <section id="menu">
+        <div class="container_img_page_menu">
+            <img class="img_page_menu" src="images/restaurants/la_française.jpg" alt="Photo d'un plat raffiné" style="width: 600px; height: 400px"><!--Style provisoire en attendant css-->
+        </div>
+        <div class="container_menu">
+            <div class="container_title_menu">
+                <h2 class="title_menu">À la française</h2>
+                <i class="icon_heart_card_restaurant fa-regular fa-heart"></i>
+            </div>
+            <div class="container_card_menu">
+                <span class="time_menu">Entrées</span>
+                <button class="choice_menu">
+                    <div class="container_name_dish_menu">
+                        <span class="name_dish">Tartare de poulpe acidulé</span>
+                        <span class="small_name_dish">Aux zestes d'orange</span>
+                    </div>
+                    <span class="price_dish">25€</span>
+                </button>
+                <button class="choice_menu">
+                    <div class="container_name_dish_menu">
+                        <span class="name_dish">Velouté de légumes d'antan</span>
+                        <span class="small_name_dish">Carotte, panais, topinambour</span>
+                    </div>
+                    <span class="price_dish">35€</span>
+                </button>
+                <button class="choice_menu">
+                    <div class="container_name_dish_menu">
+                        <span class="name_dish">Soupe à l'oignon</span>
+                        <span class="small_name_dish">Revisitée</span>
+                    </div>
+                    <span class="price_dish">20€</span>
+                </button>
+            </div>
+            <div class="container_card_menu">
+                <span class="time_menu">Plats</span>
+                <button class="choice_menu">
+                    <div class="container_name_dish_menu">
+                        <span class="name_dish">Coquilles Saint-Jacques</span>
+                        <span class="small_name_dish">Accompagnées d'une purée de panais</span>
+                    </div>
+                    <span class="price_dish">40€</span>
+                </button>
+                <button class="choice_menu">
+                    <div class="container_name_dish_menu">
+                        <span class="name_dish">Magret de canard</span>
+                        <span class="small_name_dish">Et parmentier de pommes de terre</span>
+                    </div>
+                    <span class="price_dish">35€</span>
+                </button>
+                <button class="choice_menu">
+                    <div class="container_name_dish_menu">
+                        <span class="name_dish">Pigeonneau d’Ille-et-Vilaine</span>
+                        <span class="small_name_dish">Sur son lit de gnocchis aux légumes</span>
+                    </div>
+                    <span class="price_dish">44€</span>
+                </button>
+            </div>
+            <div class="container_card_menu">
+                <span class="time_menu">Desserts</span>
+                <button class="choice_menu">
+                    <div class="container_name_dish_menu">
+                        <span class="name_dish">Pétales de violettes glacés</span>
+                        <span class="small_name_dish">Et purée de noisettes</span>
+                    </div>
+                    <span class="price_dish">18€</span>
+                </button>
+                <button class="choice_menu">
+                    <div class="container_name_dish_menu">
+                        <span class="name_dish">Fondant au chocolat</span>
+                        <span class="small_name_dish">Revisité</span>
+                    </div>
+                    <span class="price_dish">22€</span>
+                </button>
+                <button class="choice_menu">
+                    <div class="container_name_dish_menu">
+                        <span class="name_dish">Millefeuille croustillant</span>
+                        <span class="small_name_dish">Myrtilles et pâte d’amande</span>
+                    </div>
+                    <span class="price_dish">23€</span>
+                </button>
+            </div>
+            <button class="order_menu">Commander</button>
+        </div>
+    </section>
+    <footer>
+        <div class="container_footer">
+            <img class="footer_logo" src="images/logo/ohmyfood@2x.svg" alt="">
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="" class="navigation_menu_footer"><i
+                                class="icon_footer_utensils fa-solid fa-utensils"></i>Proposez un restaurant</a></li>
+                    <li><a href="" class="navigation_menu_footer"><i
+                                class="icon_footer_hands fa-solid fa-handshake"></i>Devenir partenaire</a></li>
+                    <li><a href="" class="navigation_menu_footer">Mentions légales</a></li>
+                    <li><a href="" class="navigation_menu_footer">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
