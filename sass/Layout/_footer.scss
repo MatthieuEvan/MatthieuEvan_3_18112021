@@ -1,0 +1,15 @@
+.footer {
+    padding: $padding_horizontal;
+    background-color: #353535;
+}
+.footer--title {
+    color: white;
+    font-size: $font_size_medium;
+}
+.footer__menu {
+    color: white;
+    font-size: $font_size_small;
+}
+ul li {
+    margin: 10px 0;
+}

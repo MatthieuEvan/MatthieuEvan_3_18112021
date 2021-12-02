@@ -1,0 +1,15 @@
+body {
+    margin: $margin_null;
+}
+.container {
+    padding: $padding_vertical $padding_horizontal;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}

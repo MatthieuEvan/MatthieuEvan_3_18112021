@@ -1,0 +1,52 @@
+.btn {
+    height: 80px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #aaa;
+    font-size: $font_size_small;
+    margin: auto;
+    font-weight: $font_bold;
+    position: relative;
+}
+
+.btn-booking {
+    background-color: #ff79da;
+    border-radius: 50px;
+    color: white;
+    height: 65px;
+    padding: 0 $padding_horizontal;
+    margin: 20px auto;
+}
+
+.btn-operation {
+    margin: 10px $margin_null;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $color_background;
+    margin-left: 5px;
+}
+
+.btn-circle {
+    position: absolute;
+    left: -15px;
+    border: solid 2px #d9d9d9;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    background-color: $color_primary;
+    color: white;
+    line-height: 26px;
+}
+
+.btn--menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 22px;
+    margin: 10px 0;
+    max-width: 1000px;
+}

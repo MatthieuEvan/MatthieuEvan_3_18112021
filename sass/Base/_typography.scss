@@ -1,0 +1,27 @@
+body {
+    font-family: $font_text;
+    font-size: $font_size_small;
+}
+h1 {
+    font-family: $font_title;
+    font-size: $font_size_high;
+}
+h2 {
+    font-size: $font_size_high;
+    margin: $margin_null;
+}
+.time_menu {
+    font-size: $font_size_medium;
+    margin: 10px 0;
+    border-bottom: 3px solid $color_tertiary;
+    text-transform: uppercase;
+    width: 65px;
+}
+.subtitle {
+    font-size: $font_size_medium;
+    font-weight: $font_skinny;
+    font-family: $font_text;
+}
+.title_card {
+    font-weight: $font_bold;
+}

@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 20px $padding_horizontal;
+    position: relative;
+    .header__img {
+        width: 200px;
+    }
+}

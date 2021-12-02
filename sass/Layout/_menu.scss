@@ -1,0 +1,30 @@
+.menu_container {
+    background-color: #f6f6f6;
+    border-radius: 60px 60px 0 0;
+    padding: $padding_horizontal;
+    text-align: center;
+    margin-top: -150px;
+}
+.menu_container__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 280px;
+    padding-top: 25px;
+    .title_menu {
+        margin: 0;
+    }
+}
+.menu_container__card {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+.menu_container__dish {
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

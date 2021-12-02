@@ -1,0 +1,14 @@
+.img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.restaurant-card-img {
+    border-radius: 30px 30px 0 0;
+}
+
+.img_page_menu {
+    position: relative;
+    z-index: -1;
+}

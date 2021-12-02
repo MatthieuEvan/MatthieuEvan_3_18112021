@@ -1,0 +1,21 @@
+.location__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    height: 60px;
+    font-weight: $font_bold;
+    padding-right: $padding_vertical;
+    .icon-location {
+        padding: 0 $padding_horizontal;
+    }
+}
+.location__container__booking {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color_background;
+}
+.p-booking {
+    margin: 20px $margin_null;
+}
