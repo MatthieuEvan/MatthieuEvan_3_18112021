@@ -5,127 +5,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <title>OhMyFood - Menu La note enchantée</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <div class="container_header">
-            <a href="index.html"> <i class="header_arrow_left fa-solid fa-arrow-left"></i></a>
-            <a href="index.html"><img class="header_logo" src="images/logo/ohmyfood.png"
+        <div class="header">
+            <a href="index.html"> <i class="icon icon-arrow-header fa-solid fa-arrow-left"></i></a>
+            <a href="index.html"><img class="header__img" src="images/logo/ohmyfood.png"
                     alt="Image du logo de l'entreprise"></a>
         </div>
     </header>
     <!-- MENU -->
     <section id="menu">
-        <div class="container_img_page_menu">
-            <img class="img_page_menu" src="images/restaurants/note_enchantee.jpg" alt="Photo d'un plat raffiné"
-                style="width: 600px; height: 400px">
-            <!--Style provisoire en attendant css-->
-        </div>
-        <div class="container_menu">
-            <div class="container_title_menu">
-                <h2 class="title_menu">La note enchantée</h2>
-                <i class="icon_heart_card_restaurant fa-regular fa-heart"></i>
+        <!-- <div class="container_img_page_menu"> -->
+        <img class="img img_page_menu" src="images/restaurants/note_enchantee.jpg" alt="Photo d'un plat raffiné">
+        <!-- </div> -->
+        <div class="menu_container">
+            <div class="menu_container__title">
+                <h1 class="title_menu">La note enchantée</h1>
+                <i class="icon icon_heart_card_restaurant fa-regular fa-heart"></i>
             </div>
-            <div class="container_card_menu">
-                <span class="title_container time_menu">Entrées</span>
-                <button class="btn choice_menu">
-                    <div class="container_name_dish_menu">
-                        <span class="title_card">Ravioles de foie gras</span>
-                        <span class="subtitle_title_card">Accompagnés de leur crème à la truffe</span>
+            <div class="menu_container__card">
+                <span class="time_menu">Entrées</span>
+                <button class="btn btn--menu">
+                    <div class="menu_container__dish">
+                        <span class="subtitle title_card">Ravioles de foie gras</span>
+                        <span class="subtitle subtitle_title_card">Accompagnés de leur crème à la truffe</span>
                     </div>
                     <span class="price_dish">25€</span>
                 </button>
-                <button class="btn choice_menu">
-                    <div class="container_name_dish_menu">
-                        <span class="title_card">Caviar osciètre</span>
-                        <span class="subtitle_title_card">Sur blini à la farine de blé noir</span>
+                <button class="btn btn--menu">
+                    <div class="menu_container__dish">
+                        <span class="subtitle title_card">Caviar osciètre</span>
+                        <span class="subtitle subtitle_title_card">Sur blini à la farine de blé noir</span>
                     </div>
                     <span class="price_dish">35€</span>
                 </button>
-                <button class="btn choice_menu">
-                    <div class="container_name_dish_menu">
-                        <span class="title_card">Homard et espuma de potiron</span>
-                        <span class="subtitle_title_card">Mariné aux zestes d'orange</span>
+                <button class="btn btn--menu">
+                    <div class="menu_container__dish">
+                        <span class="subtitle title_card">Homard et espuma de potiron</span>
+                        <span class="subtitle subtitle_title_card">Mariné aux zestes d'orange</span>
                     </div>
                     <span class="price_dish">20€</span>
                 </button>
-                <button class="choice_menu">
-                    <div class="container_name_dish_menu">
-                        <span class="title_card">Foie gras de canard cuit entier</span>
-                        <span class="subtitle_title_card">Confiture de figue et pain toasté</span>
+                <button class="btn btn--menu">
+                    <div class="menu_container__dish">
+                        <span class="subtitle title_card">Foie gras de canard cuit entier</span>
+                        <span class="subtitle subtitle_title_card">Confiture de figue et pain toasté</span>
                     </div>
                     <span class="price_dish">35€</span>
                 </button>
             </div>
-            <div class="container_card_menu">
-                <span class="title_container time_menu">Plats</span>
-                <button class="btn choice_menu">
-                    <div class="container_name_dish_menu">
-                        <span class="title_card">Noix de coquilles Saint-Jacques</span>
-                        <span class="subtitle_title_card">Sur lit de purée de céleri-rave</span>
+            <div class="menu_container__card">
+                <span class="time_menu">Plats</span>
+                <button class="btn btn--menu">
+                    <div class="menu_container__dish">
+                        <span class="subtitle title_card">Noix de coquilles Saint-Jacques</span>
+                        <span class="subtitle subtitle_title_card">Sur lit de purée de céleri-rave</span>
                     </div>
                     <span class="price_dish">40€</span>
                 </button>
-                <button class="btn choice_menu">
-                    <div class="container_name_dish_menu">
-                        <span class="title_card">Langoustine poêlée</span>
-                        <span class="subtitle_title_card">Purée de patate douce</span>
+                <button class="btn btn--menu">
+                    <div class="menu_container__dish">
+                        <span class="subtitle title_card">Langoustine poêlée</span>
+                        <span class="subtitle subtitle_title_card">Purée de patate douce</span>
                     </div>
                     <span class="price_dish">35€</span>
                 </button>
-                <button class="btn choice_menu">
-                    <div class="container_name_dish_menu">
-                        <span class="title_card">Mijoté de queue de boeuf</span>
-                        <span class="subtitle_title_card">Et riz sauvage aux zestes de citron</span>
+                <button class="btn btn--menu">
+                    <div class="menu_container__dish">
+                        <span class="subtitle title_card">Mijoté de queue de boeuf</span>
+                        <span class="subtitle subtitle_title_card">Et riz sauvage aux zestes de citron</span>
                     </div>
                     <span class="price_dish">44€</span>
                 </button>
             </div>
-            <div class="container_card_menu">
-                <span class="title_container time_menu">Desserts</span>
-                <button class="btn choice_menu">
-                    <div class="container_name_dish_menu">
-                        <span class="title_card">Macaron noisette et chocolat</span>
-                        <span class="subtitle_title_card">Glace au caramel brun et sel de Guérande</span>
+            <div class="menu_container__card">
+                <span class="time_menu">Desserts</span>
+                <button class="btn btn--menu">
+                    <div class="menu_container__dish">
+                        <span class="subtitle title_card">Macaron noisette et chocolat</span>
+                        <span class="subtitle subtitle_title_card">Glace au caramel brun et sel de Guérande</span>
                     </div>
                     <span class="price_dish">18€</span>
                 </button>
-                <button class="btn choice_menu">
-                    <div class="container_name_dish_menu">
-                        <span class="title_card">Baba au rhum revisité </span>
-                        <span class="subtitle_title_card">Avec son coulis de citron</span>
+                <button class="btn btn--menu">
+                    <div class="menu_container__dish">
+                        <span class="subtitle title_card">Baba au rhum revisité</span>
+                        <span class="subtitle subtitle_title_card">Avec son coulis de citron</span>
                     </div>
                     <span class="price_dish">22€</span>
                 </button>
-                <button class="btn choice_menu">
-                    <div class="container_name_dish_menu">
-                        <span class="title_card">Tarte au citron meringuée</span>
-                        <span class="subtitle_title_card">Déstructurée</span>
+                <button class="btn btn--menu">
+                    <div class="menu_container__dish">
+                        <span class="subtitle title_card">Tarte au citron meringuée </span>
+                        <span class="subtitle subtitle_title_card">Déstructurée</span>
                     </div>
                     <span class="price_dish">23€</span>
                 </button>
             </div>
-            <button class="btn_booking order_menu"><span class="font_btn font_btn_white">Commander</span></button>
+            <button class="btn btn-booking order_menu"><span class="font_btn font_btn_white">Commander</span></button>
         </div>
     </section>
     <!-- FOOTER -->
     <footer>
-        <div class="container_footer">
-            <img class="footer_logo" src="images/logo/ohmyfood@2x.svg" alt="">
-            <div class="footer_menu">
+        <div class="footer footer_menu__position">
+            <h1 class="footer--title">ohmyfood</h1>
+            <div class="footer__menu">
                 <ul>
                     <li><a href="" class="navigation_menu_footer"><i
-                                class="icon_footer_utensils fa-solid fa-utensils"></i>Proposez un restaurant</a></li>
+                                class="icon icon-footer fa-solid fa-utensils"></i>Proposez un restaurant</a></li>
                     <li><a href="" class="navigation_menu_footer"><i
-                                class="icon_footer_hands fa-solid fa-handshake"></i>Devenir partenaire</a></li>
+                                class="icon icon-footer icon-hands fa-solid fa-handshake"></i>Devenir partenaire</a>
+                    </li>
                     <li><a href="" class="navigation_menu_footer">Mentions légales</a></li>
                     <li><a href="" class="navigation_menu_footer">Contact</a></li>
                 </ul>
