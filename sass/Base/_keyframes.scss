@@ -1,0 +1,95 @@
+@keyframes container-loader {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+@keyframes progress-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes progress-hide {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+        // transform: translateY(-25px)
+    }
+    24% {
+        opacity: 1;
+        // transform: translateY(-20px)
+    }
+    46% {
+        opacity: 1;
+        // transform: translateY(-15px);
+    }
+    72% {
+        opacity: 1;
+        // transform: translateY(-10px);
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes buttons-menu {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    17% {
+        opacity: 0.2;
+        // transform: translateY(-25px)
+    }
+    24% {
+        opacity: 0.4;
+        // transform: translateY(-20px)
+    }
+    46% {
+        opacity: 0.6;
+        // transform: translateY(-15px);
+    }
+    72% {
+        opacity: 0.8;
+        // transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes confirm-dish {
+    0% {
+        transform: scaleX(0);
+    }
+    17% {
+        opacity: 0.2;
+        // transform: translateY(-25px)
+    }
+    24% {
+        opacity: 0.4;
+        // transform: translateY(-20px)
+    }
+    46% {
+        opacity: 0.6;
+        // transform: translateY(-15px);
+    }
+    72% {
+        opacity: 0.8;
+        // transform: translateY(-10px);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}

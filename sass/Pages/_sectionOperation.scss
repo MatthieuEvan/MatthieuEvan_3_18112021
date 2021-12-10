@@ -1,4 +1,4 @@
-.operation__container{
+.operation__container {
     padding: 40px 0;
     margin: 0 20px;
 }
@@ -7,6 +7,10 @@
     flex-direction: column;
     padding: $padding_vertical 0;
 }
-.span-btn-operation{
+.span-btn-operation {
     margin-left: 25px;
+    &:hover {
+        color: black;
+        filter: brightness(40%);
+    }
 }

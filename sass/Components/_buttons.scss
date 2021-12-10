@@ -11,12 +11,18 @@
 }
 
 .btn-booking {
-    background-color: #ff79da;
+    background: linear-gradient(180deg, $color_secondary, $color_primary);
     border-radius: 50px;
     color: white;
     height: 65px;
     padding: 0 $padding_horizontal;
     margin: 20px auto;
+    filter: brightness(1);
+    transition: all 250ms;
+    &:hover {
+        filter: brightness(1.1);
+        box-shadow: 0px 0px 10px #aaa;
+    }
 }
 
 .btn-operation {
@@ -26,6 +32,14 @@
     align-items: center;
     background-color: $color_background;
     margin-left: 5px;
+    transition: all 250ms;
+    &:hover {
+        background-color: rgba($color: #9256dc, $alpha: 0.13);
+        box-shadow: 0px 0px 10px #aaa;
+    }
+    &:hover > .icon-btn-operation {
+        color: $color_primary;
+    }
 }
 
 .btn-circle {
@@ -49,4 +63,69 @@
     padding: 22px;
     margin: 10px 0;
     max-width: 1000px;
+    opacity: 0;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    transition: padding-right 350ms linear;
+    &:hover {
+        padding-right: 105px;
+        &::after {
+            right: 0;
+        }
+        .icon_check_card_restaurant {
+            right: 15px;
+            top: 15px;
+            transform: rotate(360deg);
+        }
+        .price_dish {
+            right: 100px;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -80px;
+        bottom: 0;
+        border-radius: 0px 20px 20px 0px;
+        width: 80px;
+        height: 80px;
+        background-color: $color_tertiary;
+        z-index: 0;
+        transition: right 350ms linear;
+    }
+    .icon_check_card_restaurant {
+        // content: "\f00c";
+        position: absolute;
+        right: -80px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        z-index: 3;
+        border-radius: 100%;
+        background-color: white;
+        color: $color_tertiary;
+        font-size: 35px;
+        line-height: 50px;
+        transition: all 450ms linear;
+    }
+}
+.price_dish {
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+    transition: all 350ms linear;
+}
+.btn-menu--first {
+    animation: buttons-menu 750ms 0ms forwards;
+}
+.btn-menu--second {
+    animation: buttons-menu 500ms 250ms forwards;
+}
+.btn-menu--third {
+    animation: buttons-menu 500ms 500ms forwards;
+}
+.btn-menu--fourth {
+    animation: buttons-menu 500ms 750ms forwards;
 }

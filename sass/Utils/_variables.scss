@@ -5,10 +5,11 @@ $desktop: 1224px;
 $desktop-large: 1824px;
 
 // graphic identity
-$color_primary: #9356dc;
-$color_secondary: #ff79da;
-$color_tertiary: #99e2d0;
-$color_background: #f6f6f6;
+$color_primary: hsl(267,66%,60%);
+$color_secondary: hsl(317,100%,74%);
+$color_tertiary: hsl(165,56%,74%);
+$color_background: hsl(0,0%,96%);
+$color_icon: linear-gradient(360deg, $color_secondary, $color_primary);
 $font_title: "Shrikhand";
 $font_text: "Roboto";
 $font_size_small: 16px;
@@ -24,3 +25,8 @@ $font_skinny: 300;
 $padding_horizontal: 20px;
 $padding_vertical: 40px;
 $margin_null: 0;
+
+// keyframes
+$progress-bar-duration : 1000ms;
+$progress-bar-delay: 150ms;
+$progress-delay: $progress-bar-duration + $progress-bar-delay*2;

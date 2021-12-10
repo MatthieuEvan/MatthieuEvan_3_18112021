@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 280px;
+    // max-width: 280px;
     padding-top: 25px;
     .title_menu {
         margin: 0;
@@ -27,4 +27,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    min-width: 120px;
+    margin-right: 35px;
+    z-index: 0;
 }
