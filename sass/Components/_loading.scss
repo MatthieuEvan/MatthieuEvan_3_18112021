@@ -1,6 +1,6 @@
 .container-container-loader {
-    width: 100%;
-    min-height: 100%;
+    width: auto;
+    height: 100%;
     position: absolute;
     top: 0px;
     bottom: 0;
@@ -11,8 +11,8 @@
     animation: progress-hide 2500ms 0ms both;
     .loader-container {
         border-radius: 5px;
-        width: 300px;
-        height: 400px;
+        width: 280px;
+        height: 380px;
         margin: 100px auto 0;
         display: flex;
         justify-content: center;
@@ -20,21 +20,24 @@
         transform: scaleX(1);
         animation: container-loader 0ms 0ms;
         .loader {
-            width: 250px;
-            height: 250px;
-            // background: $color_icon;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             border: 7px solid transparent;
             border-top-color: $color_primary;
             animation: progress-loader 1800ms linear infinite;
-            // background: blue;
-            &::before, &::after {
+            @media screen and (min-width: $tablet) {
+                width: 300px;
+                height: 300px;
+            }
+            &::before,
+            &::after {
                 content: "";
                 position: absolute;
                 border-radius: 50%;
                 border: 7px solid transparent;
             }
-            &::before{
+            &::before {
                 top: 10px;
                 left: 10px;
                 right: 10px;
@@ -42,7 +45,7 @@
                 border-top-color: $color_secondary;
                 animation: progress-loader 2100ms linear infinite;
             }
-            &::after{
+            &::after {
                 top: 25px;
                 left: 25px;
                 right: 25px;

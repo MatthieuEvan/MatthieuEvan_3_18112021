@@ -1,5 +1,8 @@
 .icon {
     font-size: $font_size_medium;
+    @media screen and (min-width: $tablet) {
+        font-size: $font_size_high;
+    }
 }
 .icon-arrow-header {
     position: absolute;
@@ -37,10 +40,16 @@
         z-index: -1;
         opacity: 0;
     }
+    @media screen and (min-width: $tablet) {
+        font-size: $font_size_high +4;
+    }
 }
 .icon-footer {
     padding-right: 28px;
     font-size: $font_size_small;
+    @media screen and (min-width: $tablet) {
+        font-size: $font_size_medium;
+    }
 }
 .icon-hands {
     padding-right: 20px;

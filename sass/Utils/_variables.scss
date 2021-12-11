@@ -5,19 +5,16 @@ $desktop: 1224px;
 $desktop-large: 1824px;
 
 // graphic identity
-$color_primary: hsl(267,66%,60%);
-$color_secondary: hsl(317,100%,74%);
-$color_tertiary: hsl(165,56%,74%);
-$color_background: hsl(0,0%,96%);
+$color_primary: rgba($color: #9256DC, $alpha: 1.0);
+$color_secondary: rgba($color: #FF7AD9, $alpha: 1.0);
+$color_tertiary: rgba($color: #98E2CF, $alpha: 1.0);
+$color_background: rgba($color: #f5f5f5, $alpha: 1.0);
 $color_icon: linear-gradient(360deg, $color_secondary, $color_primary);
 $font_title: "Shrikhand";
 $font_text: "Roboto";
 $font_size_small: 16px;
 $font_size_medium: 20px;
 $font_size_high: 24px;
-$font_size_small_tablet: 22px;
-$font_size_medium_tablet: 26px;
-$font_size_high_tablet: 38px;
 $font_bold: bold;
 $font_skinny: 300;
 

@@ -1,15 +1,33 @@
 .restaurant__container {
     background-color: $color_background;
+    @media screen and (min-width: $desktop-large) {
+        max-width: 2000px;
+        margin: auto;
+        background-color: white;
+        border-radius: 0px 0px 30px 30px;
+    }
+    .restaurant_container__card {
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            justify-content: center;
+        }
+    }
     .restaurant_container_card__img {
         margin: 30px auto;
         background-color: white;
         border-radius: 30px;
         position: relative;
-        &:hover{
+        @media screen and (min-width: $tablet) {
+            width: 90%;
+        }
+        @media screen and (min-width: $desktop-large) {
+            width: 90%;
+            box-shadow: 0px 2px 2px #aaa;
+        }
+        &:hover {
             box-shadow: 0px 0px 5px #aaa;
             transition: all 250ms ease-in-out;
             transform: scale(1.02);
-
         }
     }
     .new {

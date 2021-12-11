@@ -1,14 +1,27 @@
 body {
     font-family: $font_text;
     font-size: $font_size_small;
+    @media screen and (min-width: $tablet) {
+        font-size: $font_size_medium;
+    }
 }
 h1 {
     font-family: $font_title;
     font-size: $font_size_high;
+    @media screen and (min-width: $tablet) {
+        font-size: $font_size_high + 4;
+    }
 }
 h2 {
     font-size: $font_size_high;
     margin: $margin_null;
+    @media screen and (min-width: $tablet) {
+        font-size: $font_size_high + 4;
+    }
+    @media screen and (min-width: $desktop-large) {
+        font-size: $font_size_high + 10;
+        text-align: center;
+    }
 }
 .time_menu {
     font-size: $font_size_medium;
@@ -16,17 +29,24 @@ h2 {
     border-bottom: 3px solid $color_tertiary;
     text-transform: uppercase;
     width: 65px;
+    @media screen and (min-width: $tablet) {
+        font-size: $font_size_high;
+    }
 }
 .subtitle {
-    font-size: $font_size_medium;
+    // font-size: $font_size_medium;
     font-weight: $font_skinny;
     font-family: $font_text;
+    @media screen and (min-width: $tablet) {
+        font-size: $font_size_high;
+    }
 }
-.title_card, .subtitle_title_card {
+.title_card,
+.subtitle_title_card {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    &.title_card{
+    &.title_card {
         font-weight: $font_bold;
     }
 }

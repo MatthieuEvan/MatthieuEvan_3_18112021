@@ -1,11 +1,24 @@
 .operation__container {
     padding: 40px 0;
     margin: 0 20px;
+    @media screen and (min-width: $desktop-large) {
+        max-width: 2000px;
+        margin: auto;
+        background-color: white;
+        padding: 40px 20px;
+    }
 }
 .operation__container__btn {
     display: flex;
     flex-direction: column;
     padding: $padding_vertical 0;
+    @media screen and (min-width: $tablet) {
+        align-items: center;
+    }
+    @media screen and (min-width: $desktop) {
+        flex-direction: initial;
+        justify-content: space-evenly;
+    }
 }
 .span-btn-operation {
     margin-left: 25px;

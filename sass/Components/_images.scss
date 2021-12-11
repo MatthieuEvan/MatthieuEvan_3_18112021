@@ -11,4 +11,7 @@
 .img_page_menu {
     position: relative;
     z-index: -1;
+    @media screen and (min-width: $desktop-large) {
+        border-radius: 30px;
+    }
 }

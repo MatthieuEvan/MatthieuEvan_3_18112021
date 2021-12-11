@@ -1,19 +1,45 @@
 .footer {
     padding: $padding_horizontal;
     background-color: #353535;
+    @media screen and (min-width: $desktop-large) {
+        padding: $padding_horizontal;
+        max-width: 2000px;
+        margin: auto;
+        background-color: $color_background;
+    }
 }
 .footer--title {
     color: white;
     font-size: $font_size_medium;
+    @media screen and (min-width: $tablet) {
+        font-size: $font_size_high;
+        text-align: center;
+    }
+    @media screen and (min-width: $desktop-large) {
+        color: black;
+    }
 }
 .footer__menu {
     color: white;
     font-size: $font_size_small;
+    @media screen and (min-width: $tablet) {
+        font-size: $font_size_medium;
+        text-align: center;
+    }
+    @media screen and (min-width: $desktop-large) {
+        color: black;
+    }
+}
+ul {
+    @media screen and (min-width: $laptop) {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 ul li {
     margin: 10px 0;
     &:hover {
-        text-shadow: 0px 0px 5px #aaa;
         transition: all 250ms ease-in-out;
+        color: rgba($color: #9256dc, $alpha: 1);
     }
 }

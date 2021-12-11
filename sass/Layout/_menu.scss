@@ -4,21 +4,41 @@
     padding: $padding_horizontal;
     text-align: center;
     margin-top: -150px;
+    @media screen and (min-width: $laptop) {
+        margin: -150px auto 0 auto;
+        background-color: white;
+        max-width: 2000px;
+        border-radius: 60px;
+    }
 }
 .menu_container__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // max-width: 280px;
+    max-width: 1000px;
     padding-top: 25px;
+    @media screen and (min-width: $laptop) {
+        align-items: center;
+        margin: auto;
+    }
     .title_menu {
         margin: 0;
     }
 }
+.container_img_page_menu{
+    @media screen and (min-width: $desktop-large) {
+        max-width: 2040px;
+        margin: auto;
+    }
+}
+
 .menu_container__card {
     display: flex;
     flex-direction: column;
     margin: 30px auto;
+    @media screen and (min-width: $laptop) {
+        align-items: center;
+    }
 }
 .menu_container__dish {
     display: flex;

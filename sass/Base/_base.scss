@@ -1,5 +1,8 @@
 body {
     margin: $margin_null;
+    @media screen and (min-width: $desktop-large) {
+        background-color: $color_background;
+    }
 }
 .container {
     padding: $padding_vertical $padding_horizontal;
