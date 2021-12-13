@@ -10,9 +10,10 @@
 }
 .footer--title {
     color: white;
-    font-size: $font_size_medium;
+    font-size: $font_size_high;;
+    font-family: $font_title;
     @media screen and (min-width: $tablet) {
-        font-size: $font_size_high;
+        font-size: $font_size_high + 4;
         text-align: center;
     }
     @media screen and (min-width: $desktop-large) {
